@@ -6,6 +6,9 @@
 </head>
 
 <body>
+  <?php
+echo "李欣怡 login!";
+?>
 
 
 
@@ -25,7 +28,5 @@ choose button color:<br/>
 
 </body>
 </html>
-<?php
-echo "李欣怡 login!";
-?>
+
 
