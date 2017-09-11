@@ -6,8 +6,9 @@
 //define your token  
 define("TOKEN", "weixin");  
 $wechatObj = new wechatCallbackapiTest();//将11行的class类实例化  
-$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
+//$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
 //11--23行代码为签名及接口验证。  
+
 class wechatCallbackapiTest  
 {  
     public function valid()//验证接口的方法  
@@ -20,7 +21,12 @@ class wechatCallbackapiTest
             exit;  
         }  
     }  
-    //公有的responseMsg的方法，是我们回复微信的关键。以后的章节修改代码就是修改这个。  
+    //公有的responseMsg的方法，是我们回复微信的关键。以后的章节修改代码就是修改这个。 
+ if (isset($_GET['echostr'])) {
+    $wechatObj->valid();
+}else{
+    $wechatObj->responseMsg();
+}
     public function responseMsg()  
     {  
         //get post data, May be due to the different environments  
