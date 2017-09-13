@@ -4,9 +4,9 @@
   */  
   
 //define your token  
-define("TOKEN", "weixin");  
+define("TOKEN", "xgyjb");  
 $wechatObj = new wechatCallbackapiTest();//将11行的class类实例化  
-//$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
+$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
 //11--23行代码为签名及接口验证。  
 $wechatObj->responseMsg();
 class wechatCallbackapiTest  
@@ -26,8 +26,8 @@ class wechatCallbackapiTest
     public function responseMsg()  
     {  
         //get post data, May be due to the different environments  
-        $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];//将用户端放松的数据保存到变量postStr中，由于微信端发送的都是xml，使用postStr无法解析，故使用$GLOBALS["HTTP_RAW_POST_DATA"]获取  
-  
+       // $postStr = $GLOBALS["HTTP_RAW_POST_DATA"];//将用户端放松的数据保存到变量postStr中，由于微信端发送的都是xml，使用postStr无法解析，故使用$GLOBALS["HTTP_RAW_POST_DATA"]获取  
+   $postStr = file_get_contents("php://input");
         //extract post data如果用户端数据不为空，执行30-55否则56-58  
         if (!empty($postStr)){  
                   
