@@ -6,7 +6,7 @@
 //define your token  
 define("TOKEN", "xgyjb");  
 $wechatObj = new wechatCallbackapiTest();//将11行的class类实例化  
-//$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
+$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
 //11--23行代码为签名及接口验证。
 $wechatObj->responseMsg();
 class wechatCallbackapiTest  
@@ -33,8 +33,8 @@ class wechatCallbackapiTest
                 $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);//将postStr变量进行解析并赋予变量postObj。simplexml_load_string（）函数是php中一个解析XML的函数，SimpleXMLElement为新对象的类，LIBXML_NOCDATA表示将CDATA设置为文本节点，CDATA标签中的文本XML不进行解析  
                 $fromUsername = $postObj->FromUserName;//将微信用户端的用户名赋予变量FromUserName  
                 $toUsername = $postObj->ToUserName;//将你的微信公众账号ID赋予变量ToUserName
-				$type=  $postObj->MsgType;
-				$CustomType= $postObj->Event;
+		$type=  $postObj->MsgType;
+	$CustomType= $postObj->Event;
                 $keyword = trim($postObj->Content);//将用户微信发来的文本内容去掉空格后赋予变量keyword  
                 $time = time();//将系统时间赋予变量time  
                 //构建XML格式的文本赋予变量textTpl，注意XML格式为微信内容固定格式，详见文档  
@@ -94,6 +94,6 @@ class wechatCallbackapiTest
             return false;  
         }  
     }  
-}  
+} 
   
 ?>  
