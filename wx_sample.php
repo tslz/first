@@ -84,7 +84,7 @@ class wechatCallbackapiTest
                    $contentStr="自公司成立以来，始终坚持“创新、协作、客观、高效”的经营宗旨和“培育一流技术，打造一流公司”的经营目标；坚持诚信求实、热情服务的>经营风格；公正、客观、依法独立地开展安全评价；注重信誉、大胆创新、科学管理，不断提技术服务水平。通过不断开拓进取，公司现已发展成为具有较强综合实力，技术力量>较为雄厚的大型安全评价企业。";
                     break;
                     case "4":
-                      $textTpl = "<xml>  
+                      $imgTpl = "<xml>  
                             <ToUserName><![CDATA[%s]]></ToUserName>  
                             <FromUserName><![CDATA[%s]]></FromUserName>  
                             <CreateTime>%s</CreateTime>  
@@ -93,8 +93,8 @@ class wechatCallbackapiTest
                             
                             <FuncFlag>0</FuncFlag>  
                             </xml>";  
-				$msgType = "image";  
-				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
+				
+				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
 //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
