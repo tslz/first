@@ -88,13 +88,13 @@ class wechatCallbackapiTest
                             <ToUserName><![CDATA[%s]]></ToUserName>  
                             <FromUserName><![CDATA[%s]]></FromUserName>  
                             <CreateTime>%s</CreateTime>  
-                            <MsgType><![CDATA[%s]]></MsgType> 
+                            <MsgType><![CDATA[image]]></MsgType> 
 			     <PicUrl><![CDATA[http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/20151125161255565556.jpg]]></PicUrl> 
-                            <Content><![CDATA[%s]]></Content>  
+                            
                             <FuncFlag>0</FuncFlag>  
                             </xml>";  
 				$msgType = "image";  
-				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数  
+				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
 //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
