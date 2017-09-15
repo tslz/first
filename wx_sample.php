@@ -89,9 +89,8 @@ class wechatCallbackapiTest
                             <FromUserName><![CDATA[%s]]></FromUserName>  
                             <CreateTime>%s</CreateTime>  
                             <MsgType><![CDATA[image]]></MsgType> 
-			     <PicUrl><![CDATA[http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/20151125161255565556.jpg]]></PicUrl> 
-                            
-                            <FuncFlag>0</FuncFlag>  
+		 <PicUrl><![CDATA[http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/20151125161255565556.jpg]]></PicUrl> 
+                           <FuncFlag>0</FuncFlag>  
                             </xml>";  
 				
 				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
@@ -103,7 +102,7 @@ class wechatCallbackapiTest
                     $contentStr="欢迎访问本公司:\n 1.公司简介 \n 2.业务范围  \n 3.成功案例  \n 4.检查动态";}
                    // $contentStr = "Welcome to wechat world!";//我们进行文本输入的内容，变量名为contentStr，如果你要更改回复信息，就在这儿  
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数  
-                    echo $resultStr;//输出回复信息，即发送微信  
+                   // echo $resultStr;//输出回复信息，即发送微信  
                 }else{  
                     echo "Input something...";//不发送到微信端，只是测试使用  
                 }  
