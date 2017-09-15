@@ -60,14 +60,13 @@ class wechatCallbackapiTest
 				 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType
 
                     $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
-                    echo $resultStr;//输出回复信息，即发送微信} 
-							elseif    
-							    ($type=="event" and   $CustomType=="unsubscribe")
-							{ $contentStr="欢迎关注本公司";
-							 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType
-
-                    $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
-                    echo $resultStr;}  
+                    echo $resultStr;
+				}
+	     elseif    ($type=="event" and   $CustomType=="unsubscribe")
+		{ $contentStr="欢迎关注本公司";
+		 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType 
+		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
+                 echo $resultStr;}  
                 if(!empty( $keyword ))//如果用户端微信发来的文本内容不为空，执行46--51否则52--53  
                 {  
                     $msgType = "text";//回复文本信息类型为text型，变量类型为msgType  
