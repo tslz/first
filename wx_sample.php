@@ -53,6 +53,8 @@ class wechatCallbackapiTest
                             //43行为回复微信的内容  
                             //44行为是否星标微信  
                             //XML格式文本结束符号  
+		file_put_contents("log.txt", $type.$CustomType.$keyword."/n", FILE_APPEND);
+
 	      if    ($type=="event" and   $CustomType=="subscribe")
 				{ $contentStr="欢迎访问本公司:\n 1.公司简介 \n 2.业务范围  \n  3.成功案例   \n 4.检查动态";} 
 							elseif    
