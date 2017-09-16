@@ -90,12 +90,12 @@ class wechatCallbackapiTest
                             <FromUserName><![CDATA[%s]]></FromUserName>  
                             <CreateTime>%s</CreateTime>  
                             <MsgType><![CDATA[image]]></MsgType> 
-			    <MediaId><![CDATA[%s]]></MediaId>
-		 <PicUrl><![CDATA[http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/20151125161255565556.jpg]]></PicUrl> 
+			    <MediaId><![CDATA[HxTlnda0OxkBgyCbY6DzcAHvtwHcqILOvsbLAakbsw5hOahn8kwMZq6q4xo9uPli]]></MediaId>
+		 <PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/T5tu8teC8dA7SBxbkia9prN7SnSsuTTibTlffudqnKZzE2ATbUO8d4qXpUexKJKjibNicuj7U9Lic8o7Gibvc6q37ibKg/0]]></PicUrl> 
                            <FuncFlag>0</FuncFlag>  
                             </xml>";  
 				
-				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$media_id);//将XML格式中的变量分别赋值。注意sprintf函数  
+				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
 //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
