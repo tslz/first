@@ -90,12 +90,14 @@ class wechatCallbackapiTest
                             <FromUserName><![CDATA[%s]]></FromUserName>  
                             <CreateTime>%s</CreateTime>  
                             <MsgType><![CDATA[image]]></MsgType> 
-			    <MsgId><![CDATA[%s]]></MsgId> 
-		 <PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/T5tu8teC8dA7SBxbkia9prN7SnSsuTTibTlffudqnKZzE2ATbUO8d4qXpUexKJKjibNicuj7U9Lic8o7Gibvc6q37ibKg/0]]></PicUrl> 
+			     <Image>
+                           <MediaId><![CDATA[PLpMRxLFgj97iNtvwRHbrRx9V9AxdPDHC2881FqFJ4sLxJO-3cj8fQ8v3yQ6scIy]]></MediaId>
+                           </Image>
+		// <PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/T5tu8teC8dA7SBxbkia9prN7SnSsuTTibTlffudqnKZzE2ATbUO8d4qXpUexKJKjibNicuj7U9Lic8o7Gibvc6q37ibKg/0]]></PicUrl> 
                            <FuncFlag>0</FuncFlag>  
                             </xml>";  
 				
-				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$MsgId);//将XML格式中的变量分别赋值。注意sprintf函数  
+				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
 //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
