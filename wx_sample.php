@@ -6,9 +6,9 @@
 //define your token  
 define("TOKEN", "xgyjb");  
 $wechatObj = new wechatCallbackapiTest();//将11行的class类实例化  
-$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
+//$wechatObj->valid();//使用-》访问类中valid方法，用来验证开发模式  
 //11--23行代码为签名及接口验证。
-//$wechatObj->responseMsg();
+$wechatObj->responseMsg();
 class wechatCallbackapiTest  
 {  
     public function valid()//验证接口的方法  
