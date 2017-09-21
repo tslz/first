@@ -35,6 +35,8 @@ class wechatCallbackapiTest
                 $toUsername = $postObj->ToUserName;//将你的微信公众账号ID赋予变量ToUserName
 		$type=  $postObj->MsgType;
 	$CustomType= $postObj->Event;
+		$ltitude=$postObj->Location_x;
+		$longitude=$postObj->Location_y;
 		$MediaId= $postObj->MediaId;
                 $keyword = trim($postObj->Content);//将用户微信发来的文本内容去掉空格后赋予变量keyword  
                 $time = time();//将系统时间赋予变量time  
@@ -67,7 +69,12 @@ class wechatCallbackapiTest
 		{ $contentStr="欢迎关注本公司";
 		 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType 
 		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
-                 echo $resultStr;}  
+                 echo $resultStr;} 
+		elseif   ($type=="location" )
+		{ $contentStr="你的地址是经度:".$ltitude."  纬度：".$longitude;
+		 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType 
+		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
+                 echo $resultStr;} 
                 if(!empty( $keyword ))//如果用户端微信发来的文本内容不为空，执行46--51否则52--53  
                 {  
                     $msgType = "text";//回复文本信息类型为text型，变量类型为msgType  
