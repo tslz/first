@@ -98,7 +98,7 @@ class wechatCallbackapiTest
                             <CreateTime>%s</CreateTime>  
                             <MsgType><![CDATA[image]]></MsgType> 
 			     <Image>
-			     <MediaId><![CDATA[PLpMRxLFgj97iNtvwRHbrT7MDIeuwxMBos5m6G8Dewiidolrd3llSHkIpg3widZq]></MediaId>
+			     <MediaId><![CDATA[94CRNEvYQYtXVUwp6MWcIvKyIgaer-YMDXK44ql4wpdGbU0Rfyu2_FKGVzsBvDQQ]]></MediaId>
                            //<MediaId><![CDATA[PLpMRxLFgj97iNtvwRHbrUyPwqGzv1awifeJqPkrb5mlvLgxjqQLNFfJj-ujTnGH]]></MediaId>
                            </Image>
 		// <PicUrl><![CDATA[http://mmbiz.qpic.cn/mmbiz_jpg/T5tu8teC8dA7SBxbkia9prN7SnSsuTTibTlffudqnKZzE2ATbUO8d4qXpUexKJKjibNicuj7U9Lic8o7Gibvc6q37ibKg/0]]></PicUrl> 
