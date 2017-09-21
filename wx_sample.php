@@ -107,6 +107,7 @@ class wechatCallbackapiTest
 				
 				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
+		      echo $resultStr; 		  
 //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
                     break;
