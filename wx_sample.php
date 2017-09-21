@@ -35,8 +35,8 @@ class wechatCallbackapiTest
                 $toUsername = $postObj->ToUserName;//将你的微信公众账号ID赋予变量ToUserName
 		$type=  $postObj->MsgType;
 	$CustomType= $postObj->Event;
-		$ltitude=$postObj->Location_x;
-		$longitude=$postObj->Location_y;
+		$ltitude=$postObj->Location_X;
+		$longitude=$postObj->Location_Y;
 		$MediaId= $postObj->MediaId;
                 $keyword = trim($postObj->Content);//将用户微信发来的文本内容去掉空格后赋予变量keyword  
                 $time = time();//将系统时间赋予变量time  
@@ -105,7 +105,7 @@ class wechatCallbackapiTest
                            <FuncFlag>0</FuncFlag>  
                             </xml>";  
 				
-				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$MediaId);//将XML格式中的变量分别赋值。注意sprintf函数  
+				$resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
 //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
