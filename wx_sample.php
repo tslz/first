@@ -88,7 +88,7 @@ class wechatCallbackapiTest
 		 $resultStr = sprintf( $voicetpl, $fromUsername, $toUsername, $time, $msgType);//将XML格式中的变量分别赋值。注意sprintf函数
                  echo $resultStr;} 
 	     elseif        ($type=="video")
-		{ $videotpl="<xml><ToUserName><![CDATA[%s]]></ToUserName>
+		{       $videotpl="<xml><ToUserName><![CDATA[%s]]></ToUserName>
                             <FromUserName><![CDATA[%s]]></FromUserName>
                              <CreateTime>%s</CreateTime>
                              <MsgType><![CDATA[%s]]></MsgType>
