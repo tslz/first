@@ -123,27 +123,7 @@ class wechatCallbackapiTest
            //$contentStr="拼搏属于未来，面对新的起点、新的征程，甘肃恒邦安全管理咨询有限公司恰如一只羽翼丰满的雄鹰，展翅翱翔，满怀信心地去迎接前方的机
 
                     break;
-	             case "5":
-		   $imgTpl = "<xml>  
-                            <ToUserName><![CDATA[%s]]></ToUserName>  
-                            <FromUserName><![CDATA[%s]]></FromUserName>  
-			    <CreateTime>%s</CreateTime>
-                            <MsgType><![CDATA[news]]></MsgType>
-                            <ArticleCount>1</ArticleCount>
-                            <Articles>
-                            <item>
-                            <Title><![CDATA["图文测试"]]></Title> 
-                            <Description><![CDATA["检查动态"]]></Description>
-                            <PicUrl><![CDATA[%s]]></PicUrl>
-                            <Url><![CDATA[%s]]></Url>
-                            </item>
-                            </Articles>
-                             </xml>";  
-			    $PicUrl="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/2.jpg";
-			    $url="http://www.gansuhengbang.com/nshow.asp?nws_id=282&cla=31&Ncla=31";
-			    $resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$PicUrl,$url);//将XML格式中的变量分别赋值。注意sprintf函数  
-                    echo $resultStr;  
-			 break;	  
+	          
 	            default:
                     $contentStr="欢迎访问本公司:\n 1.公司简介 \n 2.业务范围  \n 3.成功案例  \n 4.检查动态";}
                    // $contentStr = "Welcome to wechat world!";//我们进行文本输入的内容，变量名为contentStr，如果你要更改回复信息，就在这儿  
