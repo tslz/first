@@ -70,10 +70,22 @@ class wechatCallbackapiTest
 		 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType 
 		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
                  echo $resultStr;} 
-		elseif   ($type=="location" )
+	     elseif          ($type=="location" )
 		{ $contentStr="你的地址是经度:".$ltitude."  纬度：".$longitude;
 		 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType 
 		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
+                 echo $resultStr;} 
+	     elseif          ($type=="voice")
+		{        $voicetpl="<xml><ToUserName><![CDATA[%s]]></ToUserName>
+                            <FromUserName><![CDATA[%s]]></FromUserName>
+                             <CreateTime>%s</CreateTime>
+                             <MsgType><![CDATA[voice]]></MsgType>
+                             <Voice>
+                             <MediaId><![CDATA[PY857WVKrnlvwj41gFTwurj_hLCZhqB5Gl7N3ks4k9zOZCJP28Ucw1Y_7sX8HH-4]]></MediaId>
+                             </Voice>
+                               </xml>";
+	         $msgType = "voice";//回复文本信息类型为text型，变量类型为msgType 
+		 $resultStr = sprintf( $voicetpl, $fromUsername, $toUsername, $time, $msgType);//将XML格式中的变量分别赋值。注意sprintf函数
                  echo $resultStr;} 
 		
 		if(!empty( $keyword ))//如果用户端微信发来的文本内容不为空，执行46--51否则52--53  
