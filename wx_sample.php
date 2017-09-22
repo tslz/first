@@ -87,6 +87,20 @@ class wechatCallbackapiTest
 	         $msgType = "voice";//回复文本信息类型为text型，变量类型为msgType 
 		 $resultStr = sprintf( $voicetpl, $fromUsername, $toUsername, $time, $msgType);//将XML格式中的变量分别赋值。注意sprintf函数
                  echo $resultStr;} 
+		 elseif        ($type=="video")
+		 {       $videotpl="<xml><ToUserName><![CDATA[%s]]></ToUserName>
+                                    <FromUserName><![CDATA[%s]]></FromUserName>
+                                    <CreateTime>%s</CreateTime>
+                                    <MsgType><![CDATA[%s]]></MsgType>
+                                    <Video>
+                                   <MediaId><![CDATA[I3g8191JIkJrdSo1j3AX2MRY0zGCgKQlBebosZlwT3PhFaieWH6C2T9Hu2B_7S-j]]></MediaId>
+                                   <Title><![CDATA[test]]></Title>
+                                   <Description><![CDATA[first video]]></Description>
+                                   </Video>
+                                   </xml>";
+                               $msgType = "video";//回复文本信息类型为text型，变量类型为msgType 
+                       $resultStr = sprintf( $videotpl, $fromUsername, $toUsername, $time, $msgType);//将XML格式中的变量分别赋值。注意sprintf函数
+                        echo $resultStr;} 
 	      if(!empty( $keyword ))//如果用户端微信发来的文本内容不为空，执行46--51否则52--53  
                 {  
                     $msgType = "text";//回复文本信息类型为text型，变量类型为msgType  
