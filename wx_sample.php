@@ -143,19 +143,29 @@ class wechatCallbackapiTest
                             <FromUserName><![CDATA[%s]]></FromUserName>  
 			    <CreateTime>%s</CreateTime>
                             <MsgType><![CDATA[news]]></MsgType>
-                            <ArticleCount>1</ArticleCount>
+                            <ArticleCount>2</ArticleCount>
                             <Articles>
                             <item>
-                            <Title><![CDATA[图文测试]]></Title> 
-                            <Description><![CDATA[检查动态]]></Description>
+                            <Title><![CDATA[专项检查]]></Title> 
+                            <Description><![CDATA[%s]]></Description>
+                            <PicUrl><![CDATA[%s]]></PicUrl>
+                            <Url><![CDATA[%s]]></Url>
+                            </item>
+			    <item>
+                            <Title><![CDATA[综合检查]]></Title> 
+                            <Description><![CDATA[%s]]></Description>
                             <PicUrl><![CDATA[%s]]></PicUrl>
                             <Url><![CDATA[%s]]></Url>
                             </item>
                             </Articles>
                              </xml>";  
-			    $PicUrl="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/2.jpg";
-			    $url="http://www.gansuhengbang.com/nshow.asp?nws_id=282&cla=31&Ncla=31";
-			    $resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$PicUrl,$url);//将XML格式中的变量分别赋值。注意sprintf函数  
+			    $description1="要始终把安全生产放在首要位置，进一步健全和完善安全管理长效机制，严格落实“党政同责、一岗双责、齐抓共管、失职追责”安全生产责任制";
+		            $PicUrl1="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/1.jpg";
+			    $url1="http://www.gansuhengbang.com/nshow.asp?nws_id=282&cla=31&Ncla=31";
+			    $description2="要坚持问题导向，持续深化安全生产大检查，加大安全监管执法力度，深入排查和有效化解各类安全生产风险，坚决防范和遏制各类生产安全事故，为十九大胜利召开营造稳定的安全生产环境";
+		             $PicUrl2="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/2.jpg";
+			    $url2="http://www.gansuhengbang.com/nshow.asp?nws_id=282&cla=31&Ncla=31";
+			    $resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$description1,$PicUrl1,$url1, $description2, $PicUrl2,$url2);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
 			 break;	  
 	            default:
