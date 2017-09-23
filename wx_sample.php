@@ -161,7 +161,7 @@ class wechatCallbackapiTest
                              </xml>";  
 			    $description1="要始终把安全生产放在首要位置，进一步健全和完善安全管理长效机制，严格落实“党政同责、一岗双责、齐抓共管、失职追责”安全生产责任制";
 		            $PicUrl1="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/1.jpg";
-			    $url1="http://www.gansuhengbang.com/nshow.asp?nws_id=282&cla=31&Ncla=31";
+			    $url1="https://mp.weixin.qq.com/cgi-bin/appmsg?begin=0&count=10&t=media/appmsg_list2&type=10&action=list_card&token=1979226722&lang=zh_CN";
 			    $description2="要坚持问题导向，持续深化安全生产大检查，加大安全监管执法力度，深入排查和有效化解各类安全生产风险，坚决防范和遏制各类生产安全事故，为十九大胜利召开营造稳定的安全生产环境";
 		             $PicUrl2="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/2.jpg";
 			    $url2="http://www.gansuhengbang.com/nshow.asp?nws_id=282&cla=31&Ncla=31";
