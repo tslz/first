@@ -146,13 +146,13 @@ class wechatCallbackapiTest
                             <ArticleCount>2</ArticleCount>
                             <Articles>
                             <item>
-                            <Title><![CDATA[专项检查]]></Title> 
+                            <Title><![CDATA[区委区政府领导带队检查安全生产工作]]></Title> 
                             <Description><![CDATA[%s]]></Description>
                             <PicUrl><![CDATA[%s]]></PicUrl>
                             <Url><![CDATA[%s]]></Url>
                             </item>
 			    <item>
-                            <Title><![CDATA[综合检查]]></Title> 
+                            <Title><![CDATA[【基层动态】安全生产大检查日报（9月22日）]]></Title> 
                             <Description><![CDATA[%s]]></Description>
                             <PicUrl><![CDATA[%s]]></PicUrl>
                             <Url><![CDATA[%s]]></Url>
