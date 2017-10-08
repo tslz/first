@@ -24,7 +24,7 @@ header('Content-Type: text/html; charset=UTF-8');
 //$json=file_get_contents($TOKEN_URL);
 //$result=json_decode($json);
 
-$ACC_TOKEN="q9wtGOv1dA36zgd6Zuik9p7i2L9BDLruojm_89SM1UEXfWtfC4mrGQhONh1JhhMQy5Y1p3fVubDtJhU-nOidSU9HI0DEGHZBSUnFcapKO93JdyVGQM90eQuTew1WwdosFNKeAJAYGD";
+$ACC_TOKEN="6-RPZhrI7B-ksJIFlF_Bbj5639nnrNG0OClgF9vUoTSl2iOPk4xpnkWEF2rHcOTAGOk77VHxtupCGlCw09m3DhW_wce-375lny8D_M0JmCsd-7kiXzFCm5WJGDqDgm4FCBEgAAAHGJ";
 $data='{
 		 "button":[
 		 {
@@ -33,7 +33,7 @@ $data='{
 				{
 				   "type":"click",
 				   "name":"安全法律法规",
-				   "key":"aqlaw"，
+				   "key":"aqlaw",
 				   "url":"http://www.chinasafety.gov.cn/newpage/zcfg2016/zcfg2016.htm"
 				},
 				{
@@ -47,11 +47,6 @@ $data='{
 				   "name":"资质查询",
 				   "key":"fanYi"，
 				    "url":"http://www.chinasafety.gov.cn/newpage/zwdt2016/cxfw.htm"
-				},
-				{
-				   "type":"click",
-				   "name":"快递查询",
-				   "key":"kuaiDi"
 				}]
 		  },
 		  {
