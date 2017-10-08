@@ -71,7 +71,7 @@ class wechatCallbackapiTest
 		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
                  echo $resultStr;} 
 	     elseif          ($type=="location" )
-		{ $contentStr="你的地址是经度:".$ltitude."  纬度：".$longitude;
+		{ $contentStr="你的地址是经度:".$longitude."  纬度：".$ltitude;
 		 $msgType = "text";//回复文本信息类型为text型，变量类型为msgType 
 		 $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);//将XML格式中的变量分别赋值。注意sprintf函数
                  echo $resultStr;} 
