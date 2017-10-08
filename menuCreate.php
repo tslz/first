@@ -43,8 +43,7 @@ $data='{
 				{
 				   "type":"view",
 				   "name":"资质查询",
-				  
-				    "url":"http://www.chinasafety.gov.cn/newpage/zwdt2016/cxfw.htm"
+				  "url":"http://www.chinasafety.gov.cn/newpage/zwdt2016/cxfw.htm"
 				}]
 		  },
 		  {
@@ -58,21 +57,18 @@ $data='{
 				{
 				   "type":"view",
 				   "name":"安全标准化",
-				   
-				   "url":"http://www.gansuhengbang.com/news.asp?Cla=22"
+				    "url":"http://www.gansuhengbang.com/news.asp?Cla=22"
 				   
 				},
 				{
 				   "type":"view",
 				   "name":"职业卫生",
-				  
 				   "url":"http://www.gansuhengbang.com/news.asp?Cla=15"
 				},
 				{
 				   "type":"view",
 				   "name":"HAZOP分析",
-				  
-				    "url":"http://www.gansuhengbang.com/news.asp?Cla=25"
+				  "url":"http://www.gansuhengbang.com/news.asp?Cla=25"
 				}]
 		   },
 		   {
