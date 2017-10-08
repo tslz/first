@@ -29,22 +29,25 @@ $ACC_TOKEN="kueOMCavU30ySivJhJbKysXkUujfXMlNyioEs6wRRC0xOhfDLqdmSqOoqoqWUk6crePy
 $data='{
 		 "button":[
 		 {
-			   "name":"公共查询",
+			   "name":"微查询",
 			   "sub_button":[
 				{
 				   "type":"click",
-				   "name":"天气查询",
-				   "key":"tianQi"
+				   "name":"安全法律法规",
+				   "key":"aqlaw"，
+				   "url":"http://www.chinasafety.gov.cn/newpage/zcfg2016/zcfg2016.htm"
 				},
 				{
 				   "type":"click",
-				   "name":"公交查询",
-				   "key":"gongJiao"
+				   "name":"安全生产新闻",
+				   "key":"aqnews"，
+				   "url":"http://www.chinasafety.gov.cn/newpage/xwzx2016/xwzx2016.htm"
 				},
 				{
 				   "type":"click",
-				   "name":"翻译查询",
-				   "key":"fanYi"
+				   "name":"资质查询",
+				   "key":"fanYi"，
+				    "url":"http://www.chinasafety.gov.cn/newpage/zwdt2016/cxfw.htm"
 				},
 				{
 				   "type":"click",
@@ -53,33 +56,37 @@ $data='{
 				}]
 		  },
 		  {
-			   "name":"苏州本地",
+			   "name":"微服务",
 			   "sub_button":[
 				{
 				   "type":"view",
-				   "name":"爱上苏州",
-				   "url":"http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5NDM0NTEyMg==&appmsgid=10000005&itemidx=1&sign=136d2f76ede1b6661fd7dc08011889d7#wechat_redirect"
+				   "name":"安全评价",
+				   "url":"http://www.gansuhengbang.com/news.asp?Cla=20"
 				},
 				{
 				   "type":"click",
-				   "name":"苏州景点",
-				   "key":"suzhouScenic"
+				   "name":"安全标准化",
+				   "key":"aqbzh",
+				   "url":"http://www.gansuhengbang.com/news.asp?Cla=22"
+				   
 				},
 				{
 				   "type":"click",
-				   "name":"苏州美食",
-				   "key":"suzhouFood"
+				   "name":"职业卫生",
+				   "key":"zyws",
+				   "url":"http://www.gansuhengbang.com/news.asp?Cla=15"
 				},
 				{
 				   "type":"click",
-				   "name":"住在苏州",
-				   "key":"liveSuzhou"
+				   "name":"HAZOP分析",
+				   "key":"hafx",
+				    "url":"http://www.gansuhengbang.com/news.asp?Cla=25"
 				}]
 		   },
 		   {
 			   "type":"view",
 			   "name":"联系我们",
-			   "url":"http://mp.weixin.qq.com/mp/appmsg/show?__biz=MjM5NDM0NTEyMg==&appmsgid=10000021&itemidx=1&sign=e25db2fe9750a1b08788d6a7c0498562#wechat_redirect"
+			   "url":"http://www.gansuhengbang.com/about.asp?Cla=18"
 		   }]
        }';
 
