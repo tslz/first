@@ -33,19 +33,17 @@ $data='{
 				{
 				   "type":"view",
 				   "name":"安全法律法规",
-				   "key":"aqlaw",
 				   "url":"http://www.chinasafety.gov.cn/newpage/zcfg2016/zcfg2016.htm"
 				},
 				{
 				   "type":"view",
 				   "name":"安全生产新闻",
-				   "key":"aqnews"，
 				   "url":"http://www.chinasafety.gov.cn/newpage/xwzx2016/xwzx2016.htm"
 				},
 				{
 				   "type":"view",
 				   "name":"资质查询",
-				   "key":"fanYi"，
+				  
 				    "url":"http://www.chinasafety.gov.cn/newpage/zwdt2016/cxfw.htm"
 				}]
 		  },
@@ -60,20 +58,20 @@ $data='{
 				{
 				   "type":"view",
 				   "name":"安全标准化",
-				   "key":"aqbzh",
+				   
 				   "url":"http://www.gansuhengbang.com/news.asp?Cla=22"
 				   
 				},
 				{
 				   "type":"view",
 				   "name":"职业卫生",
-				   "key":"zyws",
+				  
 				   "url":"http://www.gansuhengbang.com/news.asp?Cla=15"
 				},
 				{
 				   "type":"view",
 				   "name":"HAZOP分析",
-				   "key":"hafx",
+				  
 				    "url":"http://www.gansuhengbang.com/news.asp?Cla=25"
 				}]
 		   },
