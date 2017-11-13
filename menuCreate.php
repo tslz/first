@@ -32,18 +32,18 @@ $data='{
 			   "sub_button":[
 				{
 				   "type":"view",
-				   "name":"安全法律法规",
-				   "url":"http://www.chinasafety.gov.cn/newpage/zcfg2016/zcfg2016.htm"
+				   "name":"地理位置",
+				   "url":"http://j.map.baidu.com/nKJ3H"
 				},
 				{
 				   "type":"view",
-				   "name":"安全生产新闻",
-				   "url":"http://www.chinasafety.gov.cn/newpage/xwzx2016/xwzx2016.htm"
+				   "name":"经营动态",
+				   "url":"http://lanzhouhotel.com/index.asp"
 				},
 				{
 				   "type":"view",
-				   "name":"资质查询",
-				  "url":"http://www.chinasafety.gov.cn/newpage/zwdt2016/cxfw.htm"
+				   "name":"饭店荣誉",
+				  "url":"http://lanzhouhotel.com/showmsg.asp?name=%D7%EE%D0%C2%CF%FB%CF%A2&ID=457"
 				}]
 		  },
 		  {
@@ -51,30 +51,30 @@ $data='{
 			   "sub_button":[
 				{
 				   "type":"view",
-				   "name":"安全评价",
-				   "url":"http://www.gansuhengbang.com/news.asp?Cla=20"
+				   "name":"客房服务",
+				   "url":"http://lanzhouhotel.com/kffw.asp"
 				},
 				{
 				   "type":"view",
-				   "name":"安全标准化",
-				    "url":"http://www.gansuhengbang.com/news.asp?Cla=22"
+				   "name":"餐饮娱乐",
+				    "url":"http://lanzhouhotel.com/cyyl.asp"
 				   
 				},
 				{
 				   "type":"view",
-				   "name":"职业卫生",
-				   "url":"http://www.gansuhengbang.com/news.asp?Cla=15"
+				   "name":"会议接待",
+				   "url":"http://lanzhouhotel.com/hyjd.asp"
 				},
 				{
 				   "type":"view",
-				   "name":"HAZOP分析",
-				  "url":"http://www.gansuhengbang.com/news.asp?Cla=25"
+				   "name":"其他服务",
+				  "url":"http://lanzhouhotel.com/qtfw.asp"
 				}]
 		   },
 		   {
 			   "type":"view",
 			   "name":"联系我们",
-			   "url":"http://www.gansuhengbang.com/about.asp?Cla=18"
+			   "url":"http://lanzhouhotel.com/lxwm.asp"
 		   }]
        }';
 
