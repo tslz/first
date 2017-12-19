@@ -160,10 +160,10 @@ class wechatCallbackapiTest
                             </Articles>
                              </xml>";  
 			    $description1=" 兰州饭店建筑庄严古朴，院内绿树成荫，环境幽雅，得到了社会各界的赞誉。许多领导和宾客为饭店留下了宝贵的题词，被誉为“陇上第一店”。";
-		            $PicUrl1="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/lzfd1.jpg";
+		            $PicUrl1="http://first-wxlzfdapp.a3c1.starter-us-west-1.openshiftapps.com/lzfd1.jpg";
 			    $url1="http://lanzhouhotel.com/bggk.asp";
 			    $description2="我们将以美味的佳肴、整洁舒适的住宿、快捷方便的通讯、温馨热情的微笑和周到细致的服务恭候您的光临。";
-		             $PicUrl2="http://two-twoapp.a3c1.starter-us-west-1.openshiftapps.com/lzfd2.jpg";
+		             $PicUrl2="http://first-wxlzfdapp.a3c1.starter-us-west-1.openshiftapps.com/lzfd2.jpg";
 			    $url2="http://lanzhouhotel.com/index.asp";
 			    $resultStr = sprintf($imgTpl, $fromUsername, $toUsername, $time,$description1,$PicUrl1,$url1, $description2, $PicUrl2,$url2);//将XML格式中的变量分别赋值。注意sprintf函数  
                     echo $resultStr;  
